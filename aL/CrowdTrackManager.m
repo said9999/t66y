@@ -47,7 +47,7 @@ static CrowdTrackManager *instance;
     self = [super init];
     if (self) {
         httpClient = [HTTPClient sharedHTTPClient];
-        //[httpClient setParameterEncoding:AFJSONParameterEncoding];
+        [httpClient setParameterEncoding:AFJSONParameterEncoding];
         reportedLostItem = [NSMutableDictionary dictionary];
         macAdressPeripheral = [NSMutableDictionary dictionary];
     }
@@ -153,10 +153,11 @@ static CrowdTrackManager *instance;
         NSString *longtitude = [NSString stringWithFormat:@"%lf",latestLocation.coordinate.longitude];
         
         NSString *postPath = [domain stringByAppendingString:lostLocationPath];
-        NSDictionary *postData = [NSDictionary dictionaryWithObjects:@[mac_ad,latitude,longtitude] forKeys:@[@"mac_ad",@"latitude",@"longitude"]];
         
+        NSDictionary *postData = [NSDictionary dictionaryWithObjects:@[mac_ad,latitude,longtitude] forKeys:@[@"mac_ad",@"latitude",@"longitude"]];
         NSArray *array = [NSArray arrayWithObject:postData];
         NSDictionary *dataWrapper = [NSDictionary dictionaryWithObject:array forKey:@"devices"];
+        
         
         [httpClient postPath:postPath parameters:dataWrapper
             success:^(AFHTTPRequestOperation *operation, id responseObject) {
