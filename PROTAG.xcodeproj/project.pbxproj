@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		32052971182CB7AB007C6066 /* CrowdTrackNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 32052970182CB7AB007C6066 /* CrowdTrackNotificationHandler.m */; };
+		3227B7771837465A00B4F787 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C0EAD18039F46006F4C3D /* MessageUI.framework */; };
 		3250A4E618067C5B000ED50E /* CustomizedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3250A4E518067C5B000ED50E /* CustomizedCell.xib */; };
 		3250A4EA18067CF7000ED50E /* CustomizedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250A4E918067CF7000ED50E /* CustomizedCell.m */; };
 		325EBACA18081C1600B2B124 /* BlueToothBackgroundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EBAC918081C1600B2B124 /* BlueToothBackgroundManager.m */; };
@@ -682,6 +683,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3227B7771837465A00B4F787 /* MessageUI.framework in Frameworks */,
 				FAB3B1B31835FA7C009F370B /* libbaidumapapi.a in Frameworks */,
 				FA72CA4118114125005A10A1 /* OpenGLES.framework in Frameworks */,
 				578A6176174B35060098D1C6 /* CoreMedia.framework in Frameworks */,

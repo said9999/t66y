@@ -38,11 +38,11 @@ static CrowdTrackNotificationHandler *instance;
 
 - (void)addNewDetectLostItem:(CrowdTrackLostItem *)lostItem{
     NSString *mac_ad = lostItem.macAdress;
-    
-    [self.delegate updateNumberOfDevices:[notifiedDevices count]+1];
-    [self pushLocalNotificationWithLostItem:lostItem];
     [newDevices addObject:mac_ad];
     [notifiedDevices addObject:mac_ad];
+    
+    [self.delegate updateNumberOfDevices:[notifiedDevices count]];
+    [self pushLocalNotificationWithLostItem:lostItem];
 }
 
 - (void)clearDevicesList{
