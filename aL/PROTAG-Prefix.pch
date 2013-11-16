@@ -1,0 +1,42 @@
+//
+// Prefix header for all source files of the 'PROTAG' target in the 'PROTAG' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define SERVER_ADDRESS @"http://www.innovatechnology.com.sg/"
+#define PUBLIC_SITE @"homepage/sites/all/modules/tracking/communication"
+#define DEV_SITE @"development/sites/all/modules/tracking/communication"
+
+//
+// Source: http://iphoneincubator.com/blog/debugging/the-evolution-of-a-replacement-for-nslog
+// Source: http://www.cimgf.com/2010/05/02/my-current-prefix-pch-file/
+//
+// DLog is almost a drop-in replacement for NSLog to turn off logging for release build
+//
+// add -DDEBUG to OTHER_CFLAGS in the build user defined settings
+//
+// Usage:
+//
+// DLog();
+// DLog(@"here");
+// DLog(@"value: %d", x);
+// Unfortunately this doesn't work DLog(aStringVariable); you have to do this instead DLog(@"%@", aStringVariable);
+//
+
+#ifdef DEBUG
+#define DLog(__FORMAT__, ...) NSLog((@"<%@:%d> " __FORMAT__), [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, ##__VA_ARGS__)
+#define ALog(...) [[NSAssertionHandler currentHandler] handleFailureInFunction:[NSString stringWithCString:__PRETTY_FUNCTION__ encoding:NSUTF8StringEncoding] file:[NSString stringWithCString:__FILE__ encoding:NSUTF8StringEncoding] lineNumber:__LINE__ description:__VA_ARGS__]
+#else
+#define DLog(...) do {} while (0)
+#define ALog(__FORMAT__, ...) NSLog((@"<%@:%d> " __FORMAT__), [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, ##__VA_ARGS__)
+#endif
