@@ -296,17 +296,7 @@ static UILabel *notificationLable;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Logout button
-    if(indexPath.section == 0)
-    {
-        if(indexPath.row == 0 || indexPath.row == 1)
-        {
-            if(![trackingOnOff isEnabled] || ![backUpOnOff isEnabled])
-                [[[UIAlertView alloc]initWithTitle:@"Information" message:@"Please Login/Register to access Mobile Functions" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
-        }
-        
-    }
-    else if (indexPath.section==1 && indexPath.row==0)
+   if (indexPath.section==1 && indexPath.row==0)
     {
         if([lbl_LogOut.text isEqualToString: @"Login"])
         {
@@ -333,7 +323,7 @@ static UILabel *notificationLable;
             [message setTag:20];
             [message show];
         }
-    } else {
+    } else if (indexPath.section == 2) {
         // nearby devices
         NSLog(@"nearby devices");
         

@@ -28,8 +28,8 @@
     self.descriptionTextView.textColor = [UIColor whiteColor];
     self.messageTextView.textColor = [UIColor whiteColor];
     self.messageTextView.font = [UIFont fontWithName:@"HelveticaNeue" size:14.0];
-    [self.radarButton setImage:[UIImage imageNamed:@"magnifier.png"] forState:UIControlStateNormal];
-    [self.callButton setImage:[UIImage imageNamed:@"phone.png"] forState:UIControlStateNormal];
+    //[self.radarButton setImage:[UIImage imageNamed:@"magnifier.png"] forState:UIControlStateNormal];
+    //[self.callButton setImage:[UIImage imageNamed:@"phone.png"] forState:UIControlStateNormal];
 }
 
 - (void)radarButtonDidClicked:(id)sender
@@ -44,11 +44,14 @@
 }
 
 - (IBAction)contactButtonDidClicked:(id)sender {
-//    UIApplication *app = [UIApplication sharedApplication];
-//    NSLog(@"clicked");
-//    NSString *urlStr = [@"tel://" stringByAppendingString:self.lostItem.contactNo];
-//    NSURL *callUrl = [NSURL URLWithString:urlStr];
-//    [app openURL:callUrl];
+    UIApplication *app = [UIApplication sharedApplication];
+    NSLog(@"clicked");
+    NSString *urlStr = [@"tel://" stringByAppendingString:self.lostItem.contactNo];
+    NSURL *callUrl = [NSURL URLWithString:urlStr];
+    [app openURL:callUrl];
+}
+
+- (IBAction)smsButtonClicked:(id)sender {
     MFMessageComposeViewController *controller = [MFMessageComposeViewController new];
 	if([MFMessageComposeViewController canSendText])
 	{
