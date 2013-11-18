@@ -16,8 +16,10 @@
 @property (nonatomic) IBOutlet UITextView *messageTextView;
 @property (nonatomic) IBOutlet UIButton *radarButton;
 @property (nonatomic) IBOutlet UIButton *callButton;
+@property (nonatomic) IBOutlet UIButton *smsButton;
 
 - (IBAction)radarButtonDidClicked:(id)sender;
 - (IBAction)contactButtonDidClicked:(id)sender;
+- (IBAction)smsButtonClicked:(id)sender;
 
 @end
