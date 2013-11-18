@@ -7,17 +7,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="1">
+        <view contentMode="scaleAspectFit" id="1">
             <rect key="frame" x="0.0" y="0.0" width="320" height="353"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="radar background.png" id="5">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" image="pie.png" id="7">
-                    <rect key="frame" x="26" y="11" width="270" height="335"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" image="shine.png" id="6">
                     <rect key="frame" x="152" y="303" width="20" height="20"/>
@@ -48,6 +44,10 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Ruler-icon.png" id="9Yg-bQ-xg3">
+                    <rect key="frame" x="-50" y="-29" width="425" height="425"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -85,7 +85,7 @@
         </view>
     </objects>
     <resources>
-        <image name="pie.png" width="520" height="644"/>
+        <image name="Ruler-icon.png" width="425" height="425"/>
         <image name="radar background.png" width="520" height="599"/>
         <image name="shine.png" width="97" height="97"/>
         <image name="yellowarrow.png" width="300" height="300"/>

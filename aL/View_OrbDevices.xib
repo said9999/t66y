@@ -43,8 +43,8 @@
         </view>
     </objects>
     <resources>
-        <image name="big button.png" width="1485" height="1485"/>
-        <image name="glow white.png" width="784" height="778"/>
-        <image name="home background.png" width="1929" height="2199"/>
+        <image name="big button.png" width="300" height="300"/>
+        <image name="glow white.png" width="100" height="99"/>
+        <image name="home background.png" width="540" height="616"/>
     </resources>
 </document>

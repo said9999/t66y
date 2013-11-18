@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		32052971182CB7AB007C6066 /* CrowdTrackNotificationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 32052970182CB7AB007C6066 /* CrowdTrackNotificationHandler.m */; };
+		3223C198183A7DA6008764D5 /* pie-21.png in Resources */ = {isa = PBXBuildFile; fileRef = 3223C197183A7DA6008764D5 /* pie-21.png */; };
+		3223C19A183A820C008764D5 /* Ruler-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3223C199183A820C008764D5 /* Ruler-icon.png */; };
+		3223C19C183A835D008764D5 /* Ruler-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3223C19B183A835D008764D5 /* Ruler-icon2.png */; };
 		3227B7771837465A00B4F787 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1C0EAD18039F46006F4C3D /* MessageUI.framework */; };
 		3250A4E618067C5B000ED50E /* CustomizedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3250A4E518067C5B000ED50E /* CustomizedCell.xib */; };
 		3250A4EA18067CF7000ED50E /* CustomizedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3250A4E918067CF7000ED50E /* CustomizedCell.m */; };
@@ -276,6 +279,9 @@
 /* Begin PBXFileReference section */
 		3205296F182CB7AB007C6066 /* CrowdTrackNotificationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrowdTrackNotificationHandler.h; sourceTree = "<group>"; };
 		32052970182CB7AB007C6066 /* CrowdTrackNotificationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrowdTrackNotificationHandler.m; sourceTree = "<group>"; };
+		3223C197183A7DA6008764D5 /* pie-21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pie-21.png"; sourceTree = "<group>"; };
+		3223C199183A820C008764D5 /* Ruler-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruler-icon.png"; sourceTree = "<group>"; };
+		3223C19B183A835D008764D5 /* Ruler-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ruler-icon2.png"; sourceTree = "<group>"; };
 		3250A4E518067C5B000ED50E /* CustomizedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizedCell.xib; sourceTree = "<group>"; };
 		3250A4E818067CF7000ED50E /* CustomizedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizedCell.h; sourceTree = "<group>"; };
 		3250A4E918067CF7000ED50E /* CustomizedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizedCell.m; sourceTree = "<group>"; };
@@ -748,6 +754,9 @@
 		4279091A180A9711002F76F2 /* NearbyDevices */ = {
 			isa = PBXGroup;
 			children = (
+				3223C19B183A835D008764D5 /* Ruler-icon2.png */,
+				3223C199183A820C008764D5 /* Ruler-icon.png */,
+				3223C197183A7DA6008764D5 /* pie-21.png */,
 				4279091B180A988C002F76F2 /* NearbyDevicesViewController.h */,
 				4279091C180A988C002F76F2 /* NearbyDevicesViewController.m */,
 				4279091D180A988C002F76F2 /* NearbyDevicesViewController.xib */,
@@ -1595,6 +1604,7 @@
 				FA41B76D17F3E91D006214C6 /* PopUp_Belongingios7.xib in Resources */,
 				FA16D563177944BA00189795 /* purse.png in Resources */,
 				FA16D564177944BA00189795 /* purse1.png in Resources */,
+				3223C19C183A835D008764D5 /* Ruler-icon2.png in Resources */,
 				FA16D565177944BA00189795 /* wallet.png in Resources */,
 				FA16D566177944BA00189795 /* wallet1.png in Resources */,
 				FA16D567177944BA00189795 /* distance.png in Resources */,
@@ -1603,6 +1613,7 @@
 				FA16D56A177944BA00189795 /* radar tracking.png in Resources */,
 				FA16D56B177944BA00189795 /* secured.png in Resources */,
 				FA16D56C177944BA00189795 /* unsecured.png in Resources */,
+				3223C198183A7DA6008764D5 /* pie-21.png in Resources */,
 				FA58C2161834A02D006355B8 /* image020.png in Resources */,
 				FA39683A182B926B00CDF653 /* two_bar_144.png in Resources */,
 				FA16D577177953B500189795 /* blue.png in Resources */,
@@ -1656,6 +1667,7 @@
 				FA58C2241834A02D006355B8 /* image034.png in Resources */,
 				5ADDC884179EF55400AA3AD3 /* 4+briefcase.png in Resources */,
 				FA58C20B1834A02D006355B8 /* image009.png in Resources */,
+				3223C19A183A820C008764D5 /* Ruler-icon.png in Resources */,
 				FA58C2131834A02D006355B8 /* image017.png in Resources */,
 				FA2D17A717F2D11100057545 /* Cells_CurrentDevicesios7.xib in Resources */,
 				5ADDC885179EF55400AA3AD3 /* 5+purse.png in Resources */,

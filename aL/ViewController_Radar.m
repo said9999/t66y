@@ -174,11 +174,11 @@ int prev_int_Status;
     //[lbl_Distance setText:[NSString stringWithFormat:@"Approximate Distance: %d",int_Estimate]];
    
     if(RSSI <0 && RSSI>-50)
-        [lbl_Distance setText:[NSString stringWithFormat:@"Approximate Distance: 1 to 5 meters"]];
-    else if(RSSI <-51 && RSSI>-80)
-        [lbl_Distance setText:[NSString stringWithFormat:@"Approximate Distance: 6 to 10 meters"]];
+        [lbl_Distance setText:[NSString stringWithFormat:@"Approximate Distance: 1 to 10 meters"]];
+    else if(RSSI <-51 && RSSI>-100)
+        [lbl_Distance setText:[NSString stringWithFormat:@"Approximate Distance: 1 to 10 meters"]];
     else
-        [lbl_Distance setText:[NSString stringWithFormat:@"Approximate Distance: Above 10 meters"]];
+        [lbl_Distance setText:[NSString stringWithFormat:@"Above 10 meters"]];
     
     double dbl_NewY = 5 * RSSI + 450;
     

@@ -10,7 +10,10 @@
 #import "ViewController_Radar.h"
 #import "CrowdTrackManager.h"
 #import <MessageUI/MFMessageComposeViewController.h>
-@interface DeviceDetailsViewController ()<MFMessageComposeViewControllerDelegate>
+
+@interface DeviceDetailsViewController ()<MFMessageComposeViewControllerDelegate>{
+}
+
 
 @end
 
@@ -52,13 +55,13 @@
 }
 
 - (IBAction)smsButtonClicked:(id)sender {
-    MFMessageComposeViewController *controller = [MFMessageComposeViewController new];
+    MFMessageComposeViewController *mfController = [[MFMessageComposeViewController alloc] init];
 	if([MFMessageComposeViewController canSendText])
 	{
-		controller.body = @"Hello from Mugunth";
-		controller.recipients = [NSArray arrayWithObjects:self.lostItem.contactNo, nil];
-		controller.messageComposeDelegate = self;
-		[self presentViewController:controller animated:NO completion:nil];
+        mfController.messageComposeDelegate = self;
+		mfController.body = @"Hi, I've found your protag.";
+		mfController.recipients = [NSArray arrayWithObject:self.lostItem.contactNo];
+		[self presentViewController:mfController animated:YES completion:nil];
         
 	}
 }
@@ -72,8 +75,6 @@
             [a show];
         }
     }];
-
-    
 }
 
 @end
